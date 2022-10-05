@@ -1,1 +1,1 @@
-My shell task
+Shell basics task

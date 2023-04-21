@@ -1,5 +1,4 @@
-# Use puppet to create a file in /tmp.
-
+# Use puppet to create a file in /tmp
 file { '/tmp/school':
     group   => 'www-data',
     owner   => 'www-data',

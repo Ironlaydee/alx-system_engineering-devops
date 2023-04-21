@@ -2,5 +2,4 @@
 exec { 'pkill killmenow' :
   command => '/pkill killmenow',
   path    => '/bin/',
-  return  => [0, 1],
   } 

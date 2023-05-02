@@ -20,4 +20,4 @@ echo*
    server 178185-web-02 52.3.241.251 check
 * >> /etc/haproxy.cfg
 
-sercice haproxy start
+sercice haproxy s

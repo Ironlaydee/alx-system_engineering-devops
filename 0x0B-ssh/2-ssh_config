@@ -3,3 +3,8 @@
 Host *
        IdentifyFile ~/.ssh/school
        PasswordAuthentication no
+       SendEnv LANG LC_*
+       HashKnownHosts yes
+       GSSAPIAuthentication yes
+       HostName 52.204.168.90
+       User ubuntu

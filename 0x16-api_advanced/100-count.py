@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" raddit api"""
-
+"""a recursive function that queries the Reddit API"""
 import json
 import requests
 

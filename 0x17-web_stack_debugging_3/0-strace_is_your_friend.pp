@@ -1,4 +1,4 @@
-# Using strace, find out why Apache is returning a 500 error
+# Use strace to find out why Apache is returning a 500 error
 # automate it using Puppet 
 
 exec { 'fix the php extension issue':

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""a recursive function that queries the Reddit API"""
+"""a function that queries the Reddit API to work"""
 import json
 import requests
 

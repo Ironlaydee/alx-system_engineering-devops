@@ -1,15 +1,16 @@
-# using Puppet, connect to a server without password 
+# SSH client configured using Puppet, also connect to a server
+# without typing a password
 
 include stdlib
 
-file_line { 'No passwd auth':
-  ensure  => present, 
-  path    => '/etc/ssh/ssh_config',
-  line    => '	PasswordAuthentication no', 
-}
+file_line { 'Refuse to authenticate using a password':
+  ensure => present,
+  path   => '/etc/ssh/ssh_config',
+  line   => 'PasswordAuthentication no',
+  }
 
-file_line { 'Delete identity file': 
-  ensure  => present, 
-  path    => '/etc/ssh/ssh_config', 
-  line    => '	IdentifyFile `/.ssh/school', 
-}
+file_line { 'Use private key':
+  ensure => present,
+  path   => '/etc/ssh/ssh_config',
+  line   => 'IdentityFile ~/.ssh/school'
+  }
